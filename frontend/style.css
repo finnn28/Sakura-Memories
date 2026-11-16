@@ -1,0 +1,423 @@
+
+:root {
+  --bg: #101014;
+  --card: #19181f;
+  --input: #111116;
+  --pink: #d98bad;
+  --pink-light: #f1b8d0;
+  --text: #f4eff3;
+  --muted: #a49ba6;
+  --border: #39313d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(ellipse at 50% 0%, #3a2032 0%, transparent 45%),
+    var(--bg);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+  background: rgb(25 24 31 / 92%);
+  border: 1px solid rgb(217 139 173 / 22%);
+  border-radius: 20px;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 35%);
+  backdrop-filter: blur(12px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 42px;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  border: 1px solid var(--pink);
+  border-radius: 50%;
+  color: var(--pink-light);
+  font-size: 25px;
+}
+
+.brand-name {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.brand-name span {
+  color: var(--pink);
+}
+
+.login-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  color: var(--pink);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.login-heading h1 {
+  font-size: clamp(26px, 5vw, 32px);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.form-group {
+  margin-bottom: 21px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  min-height: 48px;
+  padding: 13px 14px;
+  color: var(--text);
+  background: var(--input);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #746b77;
+  font-size: 12px;
+}
+
+.form-group input:focus {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 3px rgb(217 139 173 / 12%);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 65px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  color: var(--pink);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 3px 0 25px;
+  font-size: 11px;
+}
+
+.remember-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.remember-option input {
+  accent-color: var(--pink);
+}
+
+.text-link {
+  color: var(--pink);
+}
+
+.text-link:hover {
+  color: var(--pink-light);
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  min-height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  border-radius: 9px;
+  background: var(--pink);
+  color: #24131d;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.login-button:hover {
+  background: var(--pink-light);
+  transform: translateY(-1px);
+}
+
+.login-button:focus-visible,
+.toggle-password:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--pink-light);
+  outline-offset: 4px;
+}
+
+.form-message {
+  min-height: 18px;
+  margin-top: 12px;
+  color: var(--pink-light);
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 20px 0;
+  color: #817784;
+  font-size: 10px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: var(--border);
+}
+
+.register-text {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.register-text .text-link {
+  font-weight: 700;
+}
+
+.footer-note {
+  margin-top: 32px;
+  text-align: center;
+  color: #817784;
+  font-size: 10px;
+}
+
+.footer-note span {
+  color: var(--pink);
+}
+
+/* Dekorasi kelopak sakura */
+
+.sakura-petals {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.petal {
+  position: absolute;
+  top: -30px;
+  width: 11px;
+  height: 15px;
+  border-radius: 80% 10% 80% 10%;
+  background: rgb(217 139 173 / 45%);
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate3d(0, -10px, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate3d(65px, 110vh, 0) rotate(480deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 22px;
+  }
+
+  .brand {
+    margin-bottom: 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* === FORM VALIDATION === */
+
+/* Input yang tidak valid */
+.form-group input.is-invalid {
+  border-color: #f07178;
+  box-shadow: 0 0 0 3px rgb(240 113 120 / 12%);
+}
+
+/* Input yang sudah valid */
+.form-group input.is-valid {
+  border-color: #72c99a;
+}
+
+/* Pesan kesalahan */
+.form-message.is-error {
+  color: #ff9298;
+}
+
+/* Pesan sukses */
+.form-message.is-success {
+  color: #8fe0b1;
+}
+
+/* Transisi validasi */
+.form-group input {
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* Indikator kekuatan password */
+.password-strength {
+  margin-top: 10px;
+}
+
+.password-strength-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.password-strength-label {
+  font-weight: 700;
+}
+
+.password-strength-track {
+  width: 100%;
+  height: 5px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #38313b;
+}
+
+.password-strength-bar {
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  transition: width 0.25s ease, background-color 0.25s ease;
+}
+
+.password-strength-hint {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .password-strength-bar {
+    transition: none;
+  }
+}
+
+/* Status koneksi API */
+.api-status {
+  margin: 12px 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.api-status.is-connected {
+  color: #8fe0b1;
+}
+
+.api-status.is-disconnected {
+  color: #ff9298;
+}

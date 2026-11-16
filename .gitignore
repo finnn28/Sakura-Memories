@@ -1,0 +1,9 @@
+
+# Dependencies
+backend/node_modules/
+
+# Environment variables and secrets
+backend/.env
+
+# Debug logs
+npm-debug.log*
