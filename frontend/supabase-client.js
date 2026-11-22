@@ -9,4 +9,3 @@ window.sakuraSupabase = window.supabase.createClient(
   SUPABASE_PUBLISHABLE_KEY
 );
 
-console.log("Supabase Client berhasil diinisialisasi.");

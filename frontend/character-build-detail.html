@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lihat detail Character Build Toram Online di Sakura Memories">
+  <title>Detail Character Build - Sakura Memories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="build-detail-page">
+  <div class="build-detail-container">
+
+    <!-- Header -->
+    <header class="build-detail-header">
+      <a href="dashboard.html" class="build-brand">
+        <span class="build-brand-name">絆SAKURA MEMORIES</span>
+      </a>
+
+      <a href="character-build.html" class="build-back-link">
+        ← Kembali ke Character Build
+      </a>
+    </header>
+
+    <main>
+      <!-- Informasi utama build -->
+      <section class="build-detail-hero">
+        <div class="build-detail-hero-decoration" aria-hidden="true">✿</div>
+
+        <p class="build-eyebrow">CHARACTER BUILD</p>
+        <h1 id="build-name">Memuat Character Build...</h1>
+        <p id="build-meta" class="build-detail-meta"></p>
+
+        <div class="build-detail-published">
+          <span class="build-detail-status">● DIPUBLIKASIKAN</span>
+          <span>Build komunitas Sakura Memories</span>
+        </div>
+
+    <button
+        type="button"
+        id="delete-build-button"
+        class="build-delete-button"
+        hidden
+        >
+        Hapus Character Build
+    </button>
+
+      </section>
+
+      <!-- Informasi build -->
+      <section class="build-detail-section">
+        <div class="build-detail-section-heading">
+          <p class="build-eyebrow">BUILD OVERVIEW</p>
+          <h2>Informasi Build</h2>
+        </div>
+
+        <div id="build-info" class="build-detail-info"></div>
+      </section>
+
+      <!-- Distribusi stat -->
+      <section class="build-detail-section">
+        <div class="build-detail-section-heading">
+          <p class="build-eyebrow">CHARACTER STATUS</p>
+          <h2>Distribusi Stat</h2>
+          <p class="build-detail-section-description">
+            Alokasi status karakter pada build ini.
+          </p>
+        </div>
+
+        <div id="build-stats" class="build-detail-stats"></div>
+      </section>
+
+      <!-- Skill -->
+      <section class="build-detail-section">
+        <div class="build-detail-section-heading">
+          <p class="build-eyebrow">ABILITIES</p>
+          <h2>Skill Tree dan Skill</h2>
+        </div>
+
+        <details class="build-detail-accordion">
+          <summary>
+            <span class="build-accordion-icon">⚔</span>
+            <span class="build-accordion-title">Skill Tree dan Skill</span>
+            <span class="build-accordion-hint">Lihat skill</span>
+          </summary>
+          <div id="build-skills" class="build-detail-accordion-content"></div>
+        </details>
+      </section>
+
+      <!-- Registlet dan Stargem -->
+      <section class="build-detail-section">
+        <div class="build-detail-section-heading">
+          <p class="build-eyebrow">SUPPORT ITEMS</p>
+          <h2>Registlet dan Stargem</h2>
+        </div>
+
+        <details class="build-detail-accordion">
+          <summary>
+            <span class="build-accordion-icon">✧</span>
+            <span class="build-accordion-title">Registlet dan Stargem</span>
+            <span class="build-accordion-hint">Lihat item</span>
+          </summary>
+          <div id="build-items" class="build-detail-accordion-content"></div>
+        </details>
+      </section>
+
+      <!-- Equipment -->
+      <section class="build-detail-section">
+        <div class="build-detail-section-heading">
+          <p class="build-eyebrow">GEAR CONFIGURATION</p>
+          <h2>Equipment</h2>
+        </div>
+
+        <details class="build-detail-accordion">
+          <summary>
+            <span class="build-accordion-icon">◇</span>
+            <span class="build-accordion-title">Equipment</span>
+            <span class="build-accordion-hint">Lihat equipment</span>
+          </summary>
+          <div id="build-equipment" class="build-detail-accordion-content"></div>
+        </details>
+      </section>
+
+
+      <!-- Combo -->
+      <section class="build-detail-section">
+        <div class="build-detail-section-heading">
+          <p class="build-eyebrow">COMBO CONFIGURATION</p>
+          <h2>Combo</h2>
+          <p class="build-detail-section-description">
+            Screenshot combo yang digunakan pada build ini.
+          </p>
+        </div>
+
+        <details class="build-detail-accordion">
+          <summary>
+            <span class="build-accordion-icon">✧</span>
+            <span class="build-accordion-title">Combo</span>
+            <span class="build-accordion-hint">Lihat combo</span>
+          </summary>
+          <div id="build-combos" class="build-detail-accordion-content"></div>
+        </details>
+      </section>
+
+
+      <!-- Pesan status/error -->
+      <p id="build-message" class="build-detail-message" role="status" aria-live="polite"></p>
+
+      <div class="build-detail-bottom-link">
+        <a href="character-build.html" class="build-secondary-button">
+          < Build Library
+        </a>
+      </div>
+    </main>
+
+    <footer class="build-detail-footer">
+      <span>絆SAKURA MEMORIES</span>
+      <p>Community Character Build · Toram Online</p>
+    </footer>
+  </div>
+
+  <!-- Library Supabase harus dimuat sebelum client dan JavaScript halaman -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+  <script src="character-build-detail.js"></script>
+</body>
+</html>

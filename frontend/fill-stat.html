@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Referensi formula Fill Stat equipment Toram Online - Sakura Memories."
+  >
+
+  <title>Fill Stat | Sakura Memories</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    defer
+  ></script>
+  <script src="supabase-client.js" defer></script>
+  <script src="fill-stat-data.js" defer></script>
+  <script src="fill-stat.js" defer></script>
+</head>
+
+<body>
+  <div class="dashboard-page fill-stat-page" id="fill-stat-content" hidden>
+    <div class="dashboard-container">
+
+      <header class="dashboard-header">
+        <a class="dashboard-brand" href="dashboard.html">
+          <span class="brand-name">絆SAKURA MEMORIES</span>
+        </a>
+
+        <a class="dashboard-logout" href="dashboard.html" style="text-decoration: none; display: inline-block;">
+          < Dashboard
+        </a>
+      </header>
+
+      <main class="dashboard-main">
+
+        <section class="fill-stat-welcome">
+
+          <h1>Fill Stat Reference</h1>
+
+          <p>
+            Temukan formula stat equipment, pelajari urutan proses,
+            dan lihat kebutuhan material untuk setiap formula.
+          </p>
+        </section>
+
+        <section aria-labelledby="fill-stat-list-title">
+          <div class="fill-stat-section-heading">
+
+
+            <span
+              class="fill-stat-result-count"
+              id="fill-stat-result-count"
+              aria-live="polite"
+            >
+              0 formula
+            </span>
+          </div>
+
+          <div class="fill-stat-filters">
+            <div class="fill-stat-filter-group">
+              <label for="fill-stat-search">
+                Cari berdasarkan judul
+              </label>
+
+              <input
+                id="fill-stat-search"
+                type="search"
+                placeholder="Contoh: DTE Full Crit"
+                autocomplete="off"
+              >
+            </div>
+
+            <div class="fill-stat-filter-group">
+              <label for="fill-stat-type">
+                Tipe Weapon/Armor
+              </label>
+
+              <select id="fill-stat-type">
+                <option value="all">Semua tipe</option>
+                <option value="Weapon">Weapon</option>
+                <option value="Armor">Armor</option>
+              </select>
+            </div>
+          </div>
+
+          <div
+            class="fill-stat-formula-list"
+            id="fill-stat-formula-list"
+          >
+            <p class="fill-stat-message">Memuat formula...</p>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="dashboard-footer">
+        <p>© 2026 Sakura Memories · Made for our adventures.</p>
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>

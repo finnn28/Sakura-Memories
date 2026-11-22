@@ -31,10 +31,16 @@
   <main class="login-page">
     <section class="login-card" aria-labelledby="page-title">
 
-      <a class="brand" href="#" aria-label="Sakura Memories">
-        <span class="brand-icon" aria-hidden="true">絆</span>
-        <span class="brand-name">SAKURA <span>MEMORIES</span></span>
-      </a>
+  <a class="brand" href="#" aria-label="Sakura Memories">
+    <img
+      src="Assets/Logo Sakura.jpeg"
+      alt="Logo Sakura Memories"
+      class="login-logo"
+    >
+    <span class="brand-name">
+      絆SAKURA <span>MEMORIES</span>
+    </span>
+  </a>
 
       <div class="login-heading">
         <p class="eyebrow">WELCOME ADVENTURER!</p>
@@ -77,15 +83,32 @@
               required
             >
 
-            <button
-              type="button"
-              id="toggle-password"
-              class="toggle-password"
-              aria-label="Tampilkan password"
-              aria-pressed="false"
+
+          <button
+            type="button"
+            id="toggle-password"
+            class="toggle-password"
+            aria-label="Tampilkan password"
+            aria-pressed="false"
+          >
+            <svg
+              class="eye-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
             >
-              Lihat
-            </button>
+              <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </button>
+
           </div>
         </div>
 
