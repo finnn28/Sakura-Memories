@@ -397,6 +397,7 @@ if (registerForm) {
   });
 
   
+
 registerForm.addEventListener("submit", async (event) => {
   event.preventDefault();
 
@@ -418,35 +419,43 @@ registerForm.addEventListener("submit", async (event) => {
 
   const usernameInput = document.querySelector("#username");
   const emailInput = document.querySelector("#email");
-  const supabaseClient = window.sakuraSupabase;
+  const inviteCodeInput = document.querySelector("#invite-code");
 
-  if (!supabaseClient || !usernameInput || !emailInput) {
+  if (!usernameInput || !emailInput || !inviteCodeInput) {
     if (formMessage) {
       formMessage.textContent =
-        "Koneksi autentikasi belum siap. Silakan muat ulang halaman.";
+        "Formulir registrasi belum lengkap. Muat ulang halaman.";
       formMessage.classList.remove("is-success");
       formMessage.classList.add("is-error");
     }
     return;
   }
 
-  
-const username = usernameInput.value.trim();
-const email = emailInput.value.trim();
-const password = passwordInput.value;
+  const username = usernameInput.value.trim();
+  const email = emailInput.value.trim();
+  const password = passwordInput.value;
+  const inviteCode = inviteCodeInput.value;
 
-// Hitung karakter Unicode, bukan panjang UTF-16 biasa.
-const usernameLength = [...username].length;
+  const usernameLength = [...username].length;
 
-if (usernameLength < 3 || usernameLength > 30) {
-  usernameInput.setCustomValidity(
-    "IGN harus terdiri dari 3–30 karakter."
-  );
-  usernameInput.reportValidity();
-  usernameInput.setCustomValidity("");
-  return;
-}
+  if (usernameLength < 3 || usernameLength > 30) {
+    usernameInput.setCustomValidity(
+      "IGN harus terdiri dari 3–30 karakter."
+    );
+    usernameInput.reportValidity();
+    usernameInput.setCustomValidity("");
+    return;
+  }
 
+  if (!email || !inviteCode.trim()) {
+    if (formMessage) {
+      formMessage.textContent =
+        "Email dan kode undangan wajib diisi.";
+      formMessage.classList.remove("is-success");
+      formMessage.classList.add("is-error");
+    }
+    return;
+  }
 
   const submitButton = registerForm.querySelector(
     'button[type="submit"]'
@@ -460,63 +469,40 @@ if (usernameLength < 3 || usernameLength > 30) {
   }
 
   try {
-    const {
-      data: usernameAvailable,
-      error: usernameCheckError
-    } = await supabaseClient.rpc("is_username_available", {
-      p_username: username
+    const response = await fetch("/api/auth/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username,
+        email,
+        password,
+        inviteCode,
+      }),
     });
 
-    if (usernameCheckError) {
+    const result = await response.json().catch(() => ({}));
+
+    if (!response.ok || !result.success) {
       throw new Error(
-        "IGN belum dapat diperiksa. Periksa koneksi lalu coba lagi."
+        result.message ||
+          "Registrasi gagal. Silakan periksa data dan coba lagi."
       );
     }
 
-    if (usernameAvailable !== true) {
-      usernameInput.setCustomValidity(
-        "Username ini sudah digunakan atau tidak tersedia."
-      );
-      usernameInput.reportValidity();
-      usernameInput.setCustomValidity("");
-
-      if (formMessage) {
-        formMessage.textContent =
-          "Username sudah digunakan! Masukkan Username lain";
-        formMessage.classList.remove("is-success");
-        formMessage.classList.add("is-error");
-      }
-
-      usernameInput.focus();
-      return;
-    }
-
-// Jika IGN tersedia, lanjutkan ke pemanggilan signUp()
-// yang sudah ada di bawah ini.
-
-    const { data, error } = await supabaseClient.auth.signUp({
-      email: email,
-      password: password,
-      options: {
-        data: { username: username },
-        emailRedirectTo: "http://localhost:3000/"
-      }
-    });
-
-    if (error) {
-      throw new Error(
-        "Registrasi belum berhasil. Periksa data dan koneksi, lalu coba lagi."
-      );
-    }
-    
     if (formMessage) {
-      formMessage.textContent = data.session
-        ? "Akun berhasil dibuat dan kamu sudah login."
-        : "Jika email dapat digunakan, instruksi konfirmasi akan dikirim. Periksa kotak masuk dan folder spam.";
-
+      formMessage.textContent =
+        "Akun berhasil dibuat. Silakan login menggunakan email atau username dan password.";
       formMessage.classList.remove("is-error");
       formMessage.classList.add("is-success");
     }
+
+    registerForm.reset();
+    updatePasswordStrength();
+
+    confirmPasswordInput.classList.remove("is-valid", "is-invalid");
+    confirmPasswordInput.setCustomValidity("");
 
   } catch (error) {
     console.error("Kesalahan registrasi:", error);
