@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Pet Guide Sakura Memories untuk panduan Pet Toram Online dan Pet Fusion Optimizer."
+  >
+  <title>Pet Guide | Sakura Memories</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    defer
+  ></script>
+  <script src="supabase-client.js" defer></script>
+  <script src="pet-guide.js" defer></script>
+</head>
+
+<body>
+  <div class="pet-guide-page" id="pet-guide-content" hidden>
+    <aside class="pet-guide-sidebar" id="pet-guide-sidebar">
+      <div class="pet-guide-sidebar-header">
+
+        <button
+          class="pet-guide-sidebar-toggle"
+          id="pet-guide-sidebar-toggle"
+          type="button"
+          aria-label="Tutup sidebar"
+          aria-expanded="true"
+          aria-controls="pet-guide-sidebar"
+        >
+          ☰
+        </button>
+      </div>
+
+      <nav class="pet-guide-navigation" aria-label="Navigasi Pet Guide">
+        <a class="pet-guide-back-link" href="dashboard.html">
+          <span aria-hidden="true"></span>
+          <span class="pet-guide-menu-text">< Dashboard</span>
+        </a>
+
+        <div class="pet-guide-menu-group">
+          <button
+            class="pet-guide-group-toggle"
+            type="button"
+            aria-expanded="true"
+            aria-controls="pet-guide-content-menu"
+          >
+            <span class="pet-guide-menu-text">Konten</span>
+            <span class="pet-guide-group-arrow" aria-hidden="true">⌄</span>
+          </button>
+
+          <div class="pet-guide-menu-items" id="pet-guide-content-menu">
+            <button class="pet-guide-menu-item" type="button" data-guide="tamer-skill">
+              <span class="pet-guide-menu-text">Tamer Skill</span>
+            </button>
+
+            <button class="pet-guide-menu-item" type="button" data-guide="acquire-pet">
+              <span class="pet-guide-menu-text">How to Acquire a Pet</span>
+            </button>
+
+            <button class="pet-guide-menu-item" type="button" data-guide="pet-properties">
+              <span class="pet-guide-menu-text">Pet's Properties</span>
+            </button>
+
+            <button class="pet-guide-menu-item" type="button" data-guide="stamina-hunger-affinity">
+              <span class="pet-guide-menu-text">Stamina, Hunger, and Affinity</span>
+            </button>
+
+            <button class="pet-guide-menu-item" type="button" data-guide="training-disciplining">
+              <span class="pet-guide-menu-text">Training/Disciplining</span>
+            </button>
+
+            <button class="pet-guide-menu-item" type="button" data-guide="pet-skills">
+              <span class="pet-guide-menu-text">Pet's Skills</span>
+            </button>
+
+            <button class="pet-guide-menu-item" type="button" data-guide="leveling-up">
+              <span class="pet-guide-menu-text">Leveling Up</span>
+            </button>
+
+            <button class="pet-guide-menu-item" type="button" data-guide="pet-fusion">
+              <span class="pet-guide-menu-text">Pet Fusion</span>
+            </button>
+
+            <button class="pet-guide-menu-item" type="button" data-guide="pet-in-party">
+              <span class="pet-guide-menu-text">Pet in Party</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="pet-guide-menu-group">
+          <button
+            class="pet-guide-group-toggle"
+            type="button"
+            aria-expanded="true"
+            aria-controls="pet-guide-tools-menu"
+          >
+            <span class="pet-guide-menu-text">Tools</span>
+            <span class="pet-guide-group-arrow" aria-hidden="true">⌄</span>
+          </button>
+
+          <div class="pet-guide-menu-items" id="pet-guide-tools-menu">
+            <button class="pet-guide-menu-item" type="button" data-guide="fusion-optimizer">
+              <span class="pet-guide-menu-text">Pet Fusion Optimizer</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="pet-guide-sidebar-footer">
+        <span class="pet-guide-menu-text">Pet Guide</span>
+        <span class="pet-guide-version">Sakura Memories</span>
+      </div>
+    </aside>
+
+    <main class="pet-guide-main">
+      <header class="pet-guide-topbar">
+        <button
+          class="pet-guide-mobile-toggle"
+          id="pet-guide-mobile-toggle"
+          type="button"
+          aria-label="Buka atau tutup sidebar"
+          aria-controls="pet-guide-sidebar"
+        >
+          ☰
+        </button>
+
+        <div class="pet-guide-breadcrumb">
+          <span>Dashboard</span>
+          <span aria-hidden="true">/</span>
+          <strong>Pet Guide</strong>
+        </div>
+      </header>
+
+      <section class="pet-guide-welcome" id="pet-guide-welcome">
+        <div class="pet-guide-welcome-decoration" aria-hidden="true">✿</div>
+
+        <p class="pet-guide-eyebrow">SAKURA MEMORIES · TORAM ONLINE</p>
+
+        <h1>Selamat datang di Pet Guide by Sakura Memories</h1>
+
+        <p class="pet-guide-welcome-description">
+          Gunakan Side Bar di sebelah kiri untuk melihat menu yang ada
+          pada Fitur Pet Guide.
+        </p>
+
+        <div class="pet-guide-welcome-hint">
+          <span aria-hidden="true">✧</span>
+          Pilih panduan atau tools yang ingin kamu gunakan.
+        </div>
+      </section>
+
+      <section
+        class="pet-guide-view"
+        id="pet-guide-view"
+        aria-live="polite"
+        hidden
+      >
+        <div class="pet-guide-view-content" id="pet-guide-view-content">
+          <!-- Konten panduan atau tools akan ditampilkan di sini. -->
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jelajahi referensi Character Build komunitas Sakura Memories untuk Toram Online.">
+  <title>Character Build | Sakura Memories</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="supabase-client.js" defer></script>
+  <script src="character-build.js" defer></script>
+</head>
+<body>
+  <div class="build-page" id="build-content" hidden>
+    <div class="build-container">
+      <header class="build-header">
+        <a class="build-brand" href="dashboard.html">
+          <span class="build-brand-name">絆SAKURA MEMORIES</span>
+        </a>
+
+        <a href="character-build-create.html" class="build-secondary-button">
+          + Buat Character Build
+        </a>
+
+        <a class="build-back-link build-secondary-button" href="dashboard.html">
+          < Dashboard
+        </a>
+      </header>
+
+      <main>
+        <section class="build-hero">
+          <p class="build-eyebrow">SAKURA GUILD DATABASE</p>
+          <h1>Character <span>Build</span></h1>
+          <p>
+            Temukan inspirasi build, pelajari konfigurasi karakter,
+            dan bagikan strategi terbaikmu bersama anggota guild.
+          </p>
+          <div class="build-hero-decoration" aria-hidden="true">✿</div>
+        </section>
+
+        <section class="build-library" aria-labelledby="build-library-title">
+          <div class="build-section-heading">
+            <div>
+              <p class="build-eyebrow">EXPLORE THE ARCHIVE</p>
+              <h2 id="build-library-title">Build Library</h2>
+            </div>
+            <span class="build-count" id="build-count">0 build</span>
+          </div>
+
+          <div class="build-filters">
+            <label class="build-search">
+              <span aria-hidden="true">⌕</span>
+              <input
+                id="build-search"
+                type="search"
+                placeholder="Cari nama build, senjata, atau IGN..."
+                autocomplete="off"
+              >
+            </label>
+
+            <label class="build-filter-label" for="weapon-filter">
+              Kategori senjata
+            </label>
+            <select id="weapon-filter">
+              <option value="all">Semua senjata</option>
+              <option value="One-Handed Sword">One-Handed Sword</option>
+              <option value="Two-Handed Sword">Two-Handed Sword</option>
+              <option value="Bow">Bow</option>
+              <option value="Bowgun">Bowgun</option>
+              <option value="Staff">Staff</option>
+              <option value="Magic Device">Magic Device</option>
+              <option value="Knuckle">Knuckle</option>
+              <option value="Halberd">Halberd</option>
+              <option value="Katana">Katana</option>
+              <option value="Dual Swords">Dual Swords</option>
+              <option value="Other">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="build-grid" id="build-grid" aria-live="polite"></div>
+
+          <div class="build-empty" id="build-empty" hidden>
+            <span aria-hidden="true">✿</span>
+            <h3>Build tidak ditemukan</h3>
+            <p>Coba kata kunci atau kategori senjata yang berbeda.</p>
+          </div>
+
+          <p class="build-demo-note">
+            Data yang tampil saat ini adalah contoh untuk pengembangan
+            antarmuka, bukan rekomendasi build yang sudah diverifikasi.
+          </p>
+        </section>
+      </main>
+
+      <footer class="build-footer">
+        <p>© 2026 Sakura Memories · Made for our adventures.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

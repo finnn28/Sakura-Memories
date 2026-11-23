@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Dashboard Sakura Memories, portal komunitas guild Toram Online."
+  >
+  <title>Dashboard | Sakura Memories</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    defer
+  ></script>
+  <script src="supabase-client.js" defer></script>
+  <script src="dashboard.js" defer></script>
+</head>
+
+<body>
+  <div class="dashboard-page" id="dashboard-content" hidden>
+    <div class="dashboard-container">
+      <header class="dashboard-header">
+        <a class="dashboard-brand" href="dashboard.html">
+          <span class="brand-name">絆SAKURA MEMORIES</span>
+        </a>
+
+        <button
+          class="dashboard-logout"
+          id="logout-button"
+          type="button"
+        >
+          Log Out
+        </button>
+      </header>
+
+      <main class="dashboard-main">
+        <section class="dashboard-welcome" aria-labelledby="welcome-title">
+          <p class="eyebrow">GUILD MEMBER PORTAL</p>
+
+          <h1 id="welcome-title">
+            Selamat datang kembali,
+            <span class="dashboard-username" id="member-username">
+              Anggota Sakura
+            </span>
+          </h1>
+
+          <p>
+            Senang melihatmu kembali. Jelajahi berbagai referensi dan
+            tools untuk mendukung petualanganmu di Toram Online.
+          </p>
+        </section>
+
+        <section aria-labelledby="features-title">
+          <h2 class="dashboard-section-title" id="features-title">
+            Guild Tools
+          </h2>
+
+          <div class="dashboard-grid">
+            <a class="dashboard-card dashboard-card-link"
+              href="character-build.html"
+              aria-label="Buka Character Build">
+
+              <div class="dashboard-card-icon" aria-hidden="true">⚔</div>
+
+              <h3>Character Build</h3>
+
+              <p>
+                Kelola referensi stat, skill, registlet, stargem,
+                dan equipment karakter.
+              </p>
+
+            </a>
+
+
+            <a
+              class="dashboard-card dashboard-card-link"
+              href="pet-guide.html"
+              aria-label="Buka Pet Guide"
+            >
+              <div class="dashboard-card-icon" aria-hidden="true">✧</div>
+
+              <h3>Pet Guide</h3>
+
+              <p>
+                Pelajari panduan Pet, skill, training, leveling,
+                pet fusion, dan gunakan Fusion Optimizer.
+              </p>
+
+              <span class="dashboard-card-status">Buka Pet Guide →</span>
+            </a>    
+            <a
+              class="dashboard-card dashboard-card-link"
+              href="fill-stat.html"
+              aria-label="Buka Fill Stat"
+            >
+              <div class="dashboard-card-icon" aria-hidden="true">⌘</div>
+
+              <h3>Fill Stat</h3>
+
+              <p>
+                Akses referensi formula stat equipment, urutan proses,
+                dan kebutuhan material.
+              </p>
+
+              <span class="dashboard-card-status">Buka Fill Stat →</span>
+            </a>
+
+
+            <article class="dashboard-card">
+              <div class="dashboard-card-icon" aria-hidden="true">♡</div>
+              <h3>Sakura Community</h3>
+              <p>
+                Ruang untuk mengembangkan informasi dan pengalaman
+                bersama anggota guild.
+              </p>
+              <span class="dashboard-card-status">Segera hadir</span>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="dashboard-footer">
+        <p>© 2026 Sakura Memories · Made for our adventures.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

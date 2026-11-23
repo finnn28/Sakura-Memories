@@ -1029,9 +1029,14 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(
-    `Sakura Memories API berjalan di http://localhost:${PORT}`
-  );
-});
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(
+      `Sakura Memories API berjalan di http://localhost:${PORT}`
+    );
+  });
+}
+
+module.exports = app;
 
