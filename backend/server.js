@@ -34,6 +34,20 @@ const loginLimiter = rateLimit({
   },
 });
 
+
+const registerLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  limit: 3,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: {
+    success: false,
+    message:
+      "Terlalu banyak percobaan registrasi. Silakan coba lagi nanti.",
+  },
+});
+
+
 // Membaca request JSON
 app.use(express.json({ limit: "10kb" }));
 
@@ -203,6 +217,146 @@ app.post(
     next(error);
   }
 });
+
+
+app.post(
+  "/api/auth/register",
+  registerLimiter,
+  async (req, res, next) => {
+    try {
+      const { username, email, password, inviteCode } =
+        req.body ?? {};
+
+      // Pastikan seluruh input memiliki tipe yang benar.
+      if (
+        typeof username !== "string" ||
+        typeof email !== "string" ||
+        typeof password !== "string" ||
+        typeof inviteCode !== "string"
+      ) {
+        return res.status(400).json({
+          success: false,
+          message: "Semua kolom registrasi wajib diisi.",
+        });
+      }
+
+      const cleanUsername = username.trim();
+      const cleanEmail = email.trim().toLowerCase();
+      const cleanInviteCode = inviteCode.trim();
+      const usernameLength = [...cleanUsername].length;
+
+      if (
+        usernameLength < 3 ||
+        usernameLength > 30 ||
+        cleanEmail.length > 320 ||
+        password.length < 8 ||
+        password.length > 1024 ||
+        !cleanEmail ||
+        !cleanInviteCode
+      ) {
+        return res.status(400).json({
+          success: false,
+          message: "Data registrasi tidak valid.",
+        });
+      }
+
+      // Registrasi ditolak jika kode undangan belum dikonfigurasi.
+      const expectedInviteCode = process.env.GUILD_INVITE_CODE;
+
+      if (!expectedInviteCode) {
+        console.error(
+          "GUILD_INVITE_CODE belum dikonfigurasi."
+        );
+
+        return res.status(503).json({
+          success: false,
+          message: "Registrasi sementara belum tersedia.",
+        });
+      }
+
+      // Membandingkan kode tanpa perbandingan string biasa.
+      const suppliedBuffer = Buffer.from(cleanInviteCode);
+      const expectedBuffer = Buffer.from(expectedInviteCode);
+
+      const inviteIsValid =
+        suppliedBuffer.length === expectedBuffer.length &&
+        crypto.timingSafeEqual(
+          suppliedBuffer,
+          expectedBuffer
+        );
+
+      if (!inviteIsValid) {
+        return res.status(403).json({
+          success: false,
+          message: "Kode undangan tidak valid.",
+        });
+      }
+
+      // Periksa apakah username masih tersedia.
+      const {
+        data: usernameAvailable,
+        error: usernameCheckError,
+      } = await supabaseAdmin.rpc("is_username_available", {
+        p_username: cleanUsername,
+      });
+
+      if (usernameCheckError) {
+        console.error(
+          "Pemeriksaan username gagal:",
+          usernameCheckError.message
+        );
+
+        return res.status(500).json({
+          success: false,
+          message: "Registrasi belum dapat diproses.",
+        });
+      }
+
+      if (usernameAvailable !== true) {
+        return res.status(409).json({
+          success: false,
+          message: "Username sudah digunakan atau tidak tersedia.",
+        });
+      }
+
+      // Buat akun tanpa mengirim email konfirmasi.
+      const { data, error } =
+        await supabaseAdmin.auth.admin.createUser({
+          email: cleanEmail,
+          password,
+          email_confirm: true,
+          user_metadata: {
+            username: cleanUsername,
+          },
+        });
+
+      if (error || !data.user) {
+        if (error) {
+          console.error(
+            "Pembuatan akun gagal:",
+            error.message
+          );
+        }
+
+        return res.status(400).json({
+          success: false,
+          message:
+            "Registrasi gagal. Periksa email dan data yang dimasukkan.",
+        });
+      }
+
+      res.set("Cache-Control", "no-store");
+
+      return res.status(201).json({
+        success: true,
+        message:
+          "Akun berhasil dibuat. Silakan login menggunakan email atau username dan password.",
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+);
 
 
  // Endpoint menerbitkan Character Build
