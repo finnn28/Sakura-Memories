@@ -163,45 +163,30 @@ function renderStats(stats) {
 // ==============================
 
 function renderSkills(skillTrees) {
-  buildSkillsElement.innerHTML = "";
+  buildSkillsElement.replaceChildren();
 
   if (!Array.isArray(skillTrees) || skillTrees.length === 0) {
     buildSkillsElement.appendChild(
-      createTextElement(
-        "p",
-        "Tidak ada Skill Tree yang disimpan."
-      )
+      createTextElement("p", "Tidak ada Skill Tree yang disimpan.")
     );
-
     return;
   }
 
   skillTrees.forEach((tree) => {
-    const treeContainer = document.createElement("div");
+    const treeAccordion = document.createElement("details");
+    treeAccordion.className = "build-skill-tree-accordion";
 
-    const treeTitle = createTextElement(
-      "h3",
-      tree.tree_name
-    );
+    const treeSummary = createTextElement("summary", tree.tree_name);
+    treeAccordion.appendChild(treeSummary);
 
-    treeContainer.appendChild(treeTitle);
-
-    if (
-      !Array.isArray(tree.skills) ||
-      tree.skills.length === 0
-    ) {
-      treeContainer.appendChild(
-        createTextElement(
-          "p",
-          "Tidak ada skill."
-        )
-      );
+    if (!Array.isArray(tree.skills) || tree.skills.length === 0) {
+      treeAccordion.appendChild(createTextElement("p", "Tidak ada skill."));
     } else {
       const skillList = document.createElement("ul");
+      skillList.className = "build-skill-list";
 
       tree.skills.forEach((skill) => {
         const skillItem = document.createElement("li");
-
         const skillName = createTextElement(
           "strong",
           `${skill.skill_name} Lv.${skill.skill_level}`
@@ -210,21 +195,18 @@ function renderSkills(skillTrees) {
         skillItem.appendChild(skillName);
 
         if (skill.description) {
-          const description = createTextElement(
-            "p",
-            skill.description
+          skillItem.appendChild(
+            createTextElement("p", skill.description)
           );
-
-          skillItem.appendChild(description);
         }
 
         skillList.appendChild(skillItem);
       });
 
-      treeContainer.appendChild(skillList);
+      treeAccordion.appendChild(skillList);
     }
 
-    buildSkillsElement.appendChild(treeContainer);
+    buildSkillsElement.appendChild(treeAccordion);
   });
 }
 
@@ -232,6 +214,7 @@ function renderSkills(skillTrees) {
 // ==============================
 // Tampilkan Registlet / Stargem
 // ==============================
+
 
 function renderItems(items) {
   buildItemsElement.innerHTML = "";
@@ -391,6 +374,11 @@ function renderCombos(combos) {
       : "Screenshot Combo Character Build";
     image.loading = "lazy";
     image.className = "build-combo-image";
+    image.style.display = "block";
+    image.style.width = "100%";
+    image.style.maxWidth = "100%";
+    image.style.height = "auto";
+    image.style.objectFit = "contain";
 
     comboCard.appendChild(image);
     buildCombosElement.appendChild(comboCard);

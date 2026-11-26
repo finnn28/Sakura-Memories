@@ -1,0 +1,2070 @@
+[
+  {
+    "tree_id": "blade",
+    "tree_label": "Blade Skills",
+    "skills": [
+      {
+        "skill_id": "hammer_slam",
+        "skill_name": "Hammer Slam"
+      },
+      {
+        "skill_id": "cleaving_attack",
+        "skill_name": "Cleaving Attack"
+      },
+      {
+        "skill_id": "storm_blaze",
+        "skill_name": "Storm Blaze"
+      },
+      {
+        "skill_id": "garde_blade",
+        "skill_name": "Garde Blade"
+      },
+      {
+        "skill_id": "orge_slash",
+        "skill_name": "Orge Slash"
+      },
+      {
+        "skill_id": "hard_hit",
+        "skill_name": "Hard Hit"
+      },
+      {
+        "skill_id": "astute",
+        "skill_name": "Astute"
+      },
+      {
+        "skill_id": "trigger_slash",
+        "skill_name": "Trigger Slash"
+      },
+      {
+        "skill_id": "rampage",
+        "skill_name": "Rampage"
+      },
+      {
+        "skill_id": "shut_out",
+        "skill_name": "Shut-Out"
+      },
+      {
+        "skill_id": "meteor_breaker",
+        "skill_name": "Meteor Breaker"
+      },
+      {
+        "skill_id": "lunar_slash",
+        "skill_name": "Lunar Slash"
+      },
+      {
+        "skill_id": "sonic_blade",
+        "skill_name": "Sonic Blade"
+      },
+      {
+        "skill_id": "spiral_air",
+        "skill_name": "Spiral Air"
+      },
+      {
+        "skill_id": "sword_tempest",
+        "skill_name": "Sword Tempest"
+      },
+      {
+        "skill_id": "buster_blade",
+        "skill_name": "Buster Blade"
+      },
+      {
+        "skill_id": "aura_blade",
+        "skill_name": "Aura Blade"
+      },
+      {
+        "skill_id": "sword_mastery",
+        "skill_name": "Sword Mastery"
+      },
+      {
+        "skill_id": "quick_slash",
+        "skill_name": "Quick Slash"
+      },
+      {
+        "skill_id": "sword_techniques",
+        "skill_name": "Sword Techniques"
+      },
+      {
+        "skill_id": "warcry",
+        "skill_name": "War Cry"
+      },
+      {
+        "skill_id": "swift_attack",
+        "skill_name": "Swift Attack"
+      },
+      {
+        "skill_id": "berserk",
+        "skill_name": "Berserk"
+      },
+      {
+        "skill_id": "gladiate",
+        "skill_name": "Gladiate"
+      }
+    ]
+  },
+  {
+    "tree_id": "shot",
+    "tree_label": "Shot Skills",
+    "skills": [
+      {
+        "skill_id": "power_shot",
+        "skill_name": "Power Shot"
+      },
+      {
+        "skill_id": "bulleyes",
+        "skill_name": "Bulleyes"
+      },
+      {
+        "skill_id": "rain_arrow",
+        "skill_name": "Arrow Rain"
+      },
+      {
+        "skill_id": "cross_fire",
+        "skill_name": "Cross Fire"
+      },
+      {
+        "skill_id": "twin_storm",
+        "skill_name": "Twin Storm"
+      },
+      {
+        "skill_id": "quick_loader",
+        "skill_name": "Quick Loader"
+      },
+      {
+        "skill_id": "retrograde_shot",
+        "skill_name": "Retrograde Shot"
+      },
+      {
+        "skill_id": "snipe",
+        "skill_name": "Snipe"
+      },
+      {
+        "skill_id": "piercing_shot",
+        "skill_name": "Piercing Shot"
+      },
+      {
+        "skill_id": "vanquisher",
+        "skill_name": "Vanquisher"
+      },
+      {
+        "skill_id": "moeba_shot",
+        "skill_name": "Moeba Shot"
+      },
+      {
+        "skill_id": "paralysis_shot",
+        "skill_name": "Paralysis Shot"
+      },
+      {
+        "skill_id": "smoke_dust",
+        "skill_name": "Smoke Dust"
+      },
+      {
+        "skill_id": "arm_break",
+        "skill_name": "Arm Break"
+      },
+      {
+        "skill_id": "parabola_cannon",
+        "skill_name": "Parabola Cannon"
+      },
+      {
+        "skill_id": "spread_shot",
+        "skill_name": "Spread Shot"
+      },
+      {
+        "skill_id": "shot_mastery",
+        "skill_name": "Shot Mastery"
+      },
+      {
+        "skill_id": "long_range",
+        "skill_name": "Long Range"
+      },
+      {
+        "skill_id": "quick_draw",
+        "skill_name": "Quick Draw"
+      },
+      {
+        "skill_id": "decoy_shot",
+        "skill_name": "Decoy Shot"
+      },
+      {
+        "skill_id": "element_starter",
+        "skill_name": "Element Starter"
+      },
+      {
+        "skill_id": "samurai_archery",
+        "skill_name": "Samurai Archery"
+      },
+      {
+        "skill_id": "sneak_attack",
+        "skill_name": "Sneak Attack"
+      },
+      {
+        "skill_id": "hunting_buddy",
+        "skill_name": "Hunting Buddy"
+      },
+      {
+        "skill_id": "fatal_shot",
+        "skill_name": "Fatal Shot"
+      }
+    ]
+  },
+  {
+    "tree_id": "magic",
+    "tree_label": "Magic Skills",
+    "skills": [
+      {
+        "skill_id": "magic_arrow",
+        "skill_name": "Magic: Arrow"
+      },
+      {
+        "skill_id": "magic_javelin",
+        "skill_name": "Magic: Javelin"
+      },
+      {
+        "skill_id": "magic_lance",
+        "skill_name": "Magic: Lance"
+      },
+      {
+        "skill_id": "magic_impact",
+        "skill_name": "Magic: Impact"
+      },
+      {
+        "skill_id": "magic_finale",
+        "skill_name": "Magic: Finale"
+      },
+      {
+        "skill_id": "chronos_shift",
+        "skill_name": "Chronos Shift"
+      },
+      {
+        "skill_id": "magic_laser",
+        "skill_name": "Magic: Laser"
+      },
+      {
+        "skill_id": "magic_wall",
+        "skill_name": "Magic: Wall"
+      },
+      {
+        "skill_id": "magic_blast",
+        "skill_name": "Magic: Blast"
+      },
+      {
+        "skill_id": "magic_storm",
+        "skill_name": "Magic: Storm"
+      },
+      {
+        "skill_id": "magic_burst",
+        "skill_name": "Magic: Burst"
+      },
+      {
+        "skill_id": "magic_cannon",
+        "skill_name": "Magic Cannon"
+      },
+      {
+        "skill_id": "magic_crash",
+        "skill_name": "Magic: Crash"
+      },
+      {
+        "skill_id": "magic_mastery",
+        "skill_name": "Magic Mastery"
+      },
+      {
+        "skill_id": "magic_knife",
+        "skill_name": "Magic Knife"
+      },
+      {
+        "skill_id": "qadal",
+        "skill_name": "Qadal"
+      },
+      {
+        "skill_id": "spell_calibration",
+        "skill_name": "Spell Calibration"
+      },
+      {
+        "skill_id": "mp_charge",
+        "skill_name": "MP Charge"
+      },
+      {
+        "skill_id": "chain_cast",
+        "skill_name": "Chain Cast"
+      },
+      {
+        "skill_id": "power_wave",
+        "skill_name": "Power Wave"
+      },
+      {
+        "skill_id": "maximizer",
+        "skill_name": "Maximizer"
+      },
+      {
+        "skill_id": "rapid_charge",
+        "skill_name": "Rapid Charge"
+      },
+      {
+        "skill_id": "enchanted_barrier",
+        "skill_name": "Enchanted Barrier"
+      },
+      {
+        "skill_id": "magic_guardian_beam",
+        "skill_name": "Magic: Guardian Beam"
+      }
+    ]
+  },
+  {
+    "tree_id": "halberd",
+    "tree_label": "Halberd Skills",
+    "skills": [
+      {
+        "skill_id": "flash_stab",
+        "skill_name": "Flash Stab"
+      },
+      {
+        "skill_id": "cannon_spear",
+        "skill_name": "Cannon Spear"
+      },
+      {
+        "skill_id": "dragon_tail",
+        "skill_name": "Dragon Tail"
+      },
+      {
+        "skill_id": "dive_impact",
+        "skill_name": "Dive Impact"
+      },
+      {
+        "skill_id": "dragon_tooth",
+        "skill_name": "Dragon Tooth"
+      },
+      {
+        "skill_id": "draconic_charge",
+        "skill_name": "Draconic Charge"
+      },
+      {
+        "skill_id": "deadly_spear",
+        "skill_name": "Deadly Spear"
+      },
+      {
+        "skill_id": "strike_stab",
+        "skill_name": "Strike Stab"
+      },
+      {
+        "skill_id": "chronos_drive",
+        "skill_name": "Chronos Drive"
+      },
+      {
+        "skill_id": "infinite_dimemsion",
+        "skill_name": "Infinite Dimension"
+      },
+      {
+        "skill_id": "punish_ray",
+        "skill_name": "Punish Ray"
+      },
+      {
+        "skill_id": "blitz_spike",
+        "skill_name": "Blitz Spike"
+      },
+      {
+        "skill_id": "lightning_hail",
+        "skill_name": "Lightning Hail"
+      },
+      {
+        "skill_id": "thors_hammer",
+        "skill_name": "Thor's Hammer"
+      },
+      {
+        "skill_id": "halberd_mastery",
+        "skill_name": "Halberd Mastery"
+      },
+      {
+        "skill_id": "critical_spear",
+        "skill_name": "Critical Spear"
+      },
+      {
+        "skill_id": "tornado_lance",
+        "skill_name": "Tornado Lance"
+      },
+      {
+        "skill_id": "quick_aura",
+        "skill_name": "Quick Aura"
+      },
+      {
+        "skill_id": "war_cry_of_struggle",
+        "skill_name": "War Cry of Struggle"
+      },
+      {
+        "skill_id": "god_speed_wield",
+        "skill_name": "Godspeed Wield"
+      },
+      {
+        "skill_id": "almighty_wield",
+        "skill_name": "Almighty Wield"
+      },
+      {
+        "skill_id": "buster_lance",
+        "skill_name": "Buster Lance"
+      }
+    ]
+  },
+  {
+    "tree_id": "mononofu",
+    "tree_label": "Mononofu Skills",
+    "skills": [
+      {
+        "skill_id": "issen",
+        "skill_name": "Issen"
+      },
+      {
+        "skill_id": "pulse_blade",
+        "skill_name": "Pulse Blade"
+      },
+      {
+        "skill_id": "triple_thrust",
+        "skill_name": "Triple Thrust"
+      },
+      {
+        "skill_id": "hasso_happa",
+        "skill_name": "Hasso Happa"
+      },
+      {
+        "skill_id": "tenryu_ransei",
+        "skill_name": "Tenryu Ransei"
+      },
+      {
+        "skill_id": "kasumisetsu_getsuka",
+        "skill_name": "Kasumisetsu Getsuka"
+      },
+      {
+        "skill_id": "garyou_tensei",
+        "skill_name": "Garyou Tensei"
+      },
+      {
+        "skill_id": "shadowless_slash",
+        "skill_name": "Shadowless Slash"
+      },
+      {
+        "skill_id": "pommel_strike",
+        "skill_name": "Pommel Strike"
+      },
+      {
+        "skill_id": "magadachi",
+        "skill_name": "Magadachi"
+      },
+      {
+        "skill_id": "zantei_settetsu",
+        "skill_name": "Zantei Settetsu"
+      },
+      {
+        "skill_id": "bushido",
+        "skill_name": "Bushido"
+      },
+      {
+        "skill_id": "shukuchi",
+        "skill_name": "Shukuchi"
+      },
+      {
+        "skill_id": "nukiuchi_sennosen",
+        "skill_name": "Nukiuchi Sennosen"
+      },
+      {
+        "skill_id": "two_handed",
+        "skill_name": "Two-Handed"
+      },
+      {
+        "skill_id": "meikyo_shisui",
+        "skill_name": "Meikyo Shisui"
+      },
+      {
+        "skill_id": "kairiki",
+        "skill_name": "Kairiki Ranshin"
+      },
+      {
+        "skill_id": "dauntless",
+        "skill_name": "Dauntless"
+      },
+      {
+        "skill_id": "auspicious_wind",
+        "skill_name": "Auspicious Wind"
+      },
+      {
+        "skill_id": "gust",
+        "skill_name": "Gust"
+      },
+      {
+        "skill_id": "zephyr_rush",
+        "skill_name": "Zephyr Rush"
+      },
+      {
+        "skill_id": "super_gust",
+        "skill_name": "Super Gust"
+      },
+      {
+        "skill_id": "bounching_blade",
+        "skill_name": "Bounching Blade"
+      }
+    ]
+  },
+  {
+    "tree_id": "dual",
+    "tree_label": "Dual Sword Skills",
+    "skills": [
+      {
+        "skill_id": "dual_sword_mastery",
+        "skill_name": "Dual Sword Mastery"
+      },
+      {
+        "skill_id": "twin_slash",
+        "skill_name": "Twin Slash"
+      },
+      {
+        "skill_id": "spinning_slash",
+        "skill_name": "Spinning Slash"
+      },
+      {
+        "skill_id": "phantom_slash",
+        "skill_name": "Phantom Slash"
+      },
+      {
+        "skill_id": "aerial_cut",
+        "skill_name": "Aerial Cut"
+      },
+      {
+        "skill_id": "cross_parry",
+        "skill_name": "Cross Parry"
+      },
+      {
+        "skill_id": "charging_slash",
+        "skill_name": "Charging Slash"
+      },
+      {
+        "skill_id": "shadowstep",
+        "skill_name": "Shadowstep"
+      },
+      {
+        "skill_id": "shining_cross",
+        "skill_name": "Shining Cross"
+      },
+      {
+        "skill_id": "lunar_misfortune",
+        "skill_name": "Lunar Misfortune"
+      },
+      {
+        "skill_id": "twin_buster_blade",
+        "skill_name": "Twin Buster Blade"
+      },
+      {
+        "skill_id": "reflex",
+        "skill_name": "Reflex"
+      },
+      {
+        "skill_id": "flash_blast",
+        "skill_name": "Flash Blast"
+      },
+      {
+        "skill_id": "storm_reaper",
+        "skill_name": "Storm Reaper"
+      },
+      {
+        "skill_id": "dual_sword_control",
+        "skill_name": "Dual Sword Control"
+      },
+      {
+        "skill_id": "godspeed",
+        "skill_name": "Godspeed"
+      },
+      {
+        "skill_id": "saber_aura",
+        "skill_name": "Saber Aura"
+      },
+      {
+        "skill_id": "crescent_saber",
+        "skill_name": "Crescent Saber"
+      },
+      {
+        "skill_id": "aerial_slay",
+        "skill_name": "Aerial Slay"
+      },
+      {
+        "skill_id": "horizon_cut",
+        "skill_name": "Horizon Cut"
+      },
+      {
+        "skill_id": "sting_blade",
+        "skill_name": "Sting Blade"
+      }
+    ]
+  },
+  {
+    "tree_id": "martial",
+    "tree_label": "Martial Skills",
+    "skills": [
+      {
+        "skill_id": "smash",
+        "skill_name": "Smash"
+      },
+      {
+        "skill_id": "bash",
+        "skill_name": "Bash"
+      },
+      {
+        "skill_id": "shellbreak",
+        "skill_name": "Shell Break"
+      },
+      {
+        "skill_id": "heavy_smash",
+        "skill_name": "Heavy Smash"
+      },
+      {
+        "skill_id": "chariot",
+        "skill_name": "Chariot"
+      },
+      {
+        "skill_id": "abstract_arms",
+        "skill_name": "Abstract Arms"
+      },
+      {
+        "skill_id": "mountain_press",
+        "skill_name": "Mountain Press"
+      },
+      {
+        "skill_id": "sonic_wave",
+        "skill_name": "Sonic Wave"
+      },
+      {
+        "skill_id": "earthbind",
+        "skill_name": "Earthbind"
+      },
+      {
+        "skill_id": "triple_kick",
+        "skill_name": "Triple Kick"
+      },
+      {
+        "skill_id": "rush",
+        "skill_name": "Rush"
+      },
+      {
+        "skill_id": "asura_aura",
+        "skill_name": "Asura Aura"
+      },
+      {
+        "skill_id": "seismic_stomp",
+        "skill_name": "Seismic Stomp"
+      },
+      {
+        "skill_id": "spin_sweep",
+        "skill_name": "Spin Sweep"
+      },
+      {
+        "skill_id": "flash_blink",
+        "skill_name": "Flash Blink"
+      },
+      {
+        "skill_id": "martial_mastery",
+        "skill_name": "Martial Mastery"
+      },
+      {
+        "skill_id": "martial_discipline",
+        "skill_name": "Martial Discipline"
+      },
+      {
+        "skill_id": "chakra",
+        "skill_name": "Chakra"
+      },
+      {
+        "skill_id": "energy_control",
+        "skill_name": "Energy Control"
+      },
+      {
+        "skill_id": "aggravate",
+        "skill_name": "Aggravate"
+      },
+      {
+        "skill_id": "strong_chase_attack",
+        "skill_name": "Strong Chase Attack"
+      },
+      {
+        "skill_id": "slide",
+        "skill_name": "Slide"
+      }
+    ]
+  },
+  {
+    "tree_id": "crusher",
+    "tree_label": "Crusher Skills",
+    "skills": [
+      {
+        "skill_id": "foreseen_punch",
+        "skill_name": "Foreseen Punch"
+      },
+      {
+        "skill_id": "goliath_punch",
+        "skill_name": "Goliath Punch"
+      },
+      {
+        "skill_id": "god_hand",
+        "skill_name": "God Hand"
+      },
+      {
+        "skill_id": "divine_rigid_body",
+        "skill_name": "Divine Rigid Body"
+      },
+      {
+        "skill_id": "breathwork",
+        "skill_name": "Breathwork"
+      },
+      {
+        "skill_id": "floating_kick",
+        "skill_name": "Floating Kick"
+      },
+      {
+        "skill_id": "geyser_kick",
+        "skill_name": "Geyser Kick"
+      },
+      {
+        "skill_id": "combination",
+        "skill_name": "Combination"
+      },
+      {
+        "skill_id": "annihilator",
+        "skill_name": "Annihilator"
+      },
+      {
+        "skill_id": "terrablast",
+        "skill_name": "Terrablast"
+      }
+    ]
+  },
+  {
+    "tree_id": "sprite",
+    "tree_label": "Sprite Skills",
+    "skills": [
+      {
+        "skill_id": "auto_device",
+        "skill_name": "Auto-Device"
+      },
+      {
+        "skill_id": "express_aid",
+        "skill_name": "Express Aid"
+      },
+      {
+        "skill_id": "micro_heal",
+        "skill_name": "Micro Heal"
+      },
+      {
+        "skill_id": "resurrection",
+        "skill_name": "Resurrection"
+      },
+      {
+        "skill_id": "enhance",
+        "skill_name": "Enhance"
+      },
+      {
+        "skill_id": "stabiliz",
+        "skill_name": "Stabiliz"
+      },
+      {
+        "skill_id": "sprite_upgrade",
+        "skill_name": "Sprite Upgrade"
+      },
+      {
+        "skill_id": "sprite_shield",
+        "skill_name": "Sprite Shield"
+      },
+      {
+        "skill_id": "counterforce",
+        "skill_name": "Counterforce"
+      },
+      {
+        "skill_id": "astral_lance",
+        "skill_name": "Astral Lance"
+      },
+      {
+        "skill_id": "magic_vulkan",
+        "skill_name": "Magic Vulcan"
+      },
+      {
+        "skill_id": "cursed_altar",
+        "skill_name": "Cursed Altar"
+      },
+      {
+        "skill_id": "ignition",
+        "skill_name": "Ignition"
+      },
+      {
+        "skill_id": "terrawrym",
+        "skill_name": "Terrawrym"
+      },
+      {
+        "skill_id": "faux_weapon",
+        "skill_name": "Faux Weapon"
+      },
+      {
+        "skill_id": "slash_reaper",
+        "skill_name": "Slash Reaper"
+      },
+      {
+        "skill_id": "lebenglanz",
+        "skill_name": "Lebenglanz"
+      }
+    ]
+  },
+  {
+    "tree_id": "barehand",
+    "tree_label": "Barehand Skills",
+    "skills": [
+      {
+        "skill_id": "unarmed_mastery",
+        "skill_name": "Unarmed Mastery"
+      },
+      {
+        "skill_id": "qi_charge",
+        "skill_name": "Qi Charge"
+      },
+      {
+        "skill_id": "lion_rage",
+        "skill_name": "Lion Rage"
+      },
+      {
+        "skill_id": "ultima_lion_rage",
+        "skill_name": "Ultima Lion Rage"
+      },
+      {
+        "skill_id": "earthshaker",
+        "skill_name": "Earthshaker"
+      },
+      {
+        "skill_id": "raving_storm",
+        "skill_name": "Raving Storm"
+      },
+      {
+        "skill_id": "ultima_raving_storm",
+        "skill_name": "Ultima Raving Storm"
+      },
+      {
+        "skill_id": "internal_elixir",
+        "skill_name": "Internal Elixir"
+      },
+      {
+        "skill_id": "clash_of_enmity",
+        "skill_name": "Clash of Enmity"
+      },
+      {
+        "skill_id": "miracle_comeback",
+        "skill_name": "Miracle Comeback"
+      },
+      {
+        "skill_id": "ultima_qi_charge",
+        "skill_name": "Ultima Qi Charge"
+      },
+      {
+        "skill_id": "hidden_talent",
+        "skill_name": "Hidden Talent"
+      }
+    ]
+  },
+  {
+    "tree_id": "shield",
+    "tree_label": "Shield Skills",
+    "skills": [
+      {
+        "skill_id": "shield_mastery",
+        "skill_name": "Shield Mastery"
+      },
+      {
+        "skill_id": "shield_bash",
+        "skill_name": "Shield Bash"
+      },
+      {
+        "skill_id": "shield_cannon",
+        "skill_name": "Shield Cannon"
+      },
+      {
+        "skill_id": "guard_strike",
+        "skill_name": "Guard Strike"
+      },
+      {
+        "skill_id": "force_shield",
+        "skill_name": "Force Shield"
+      },
+      {
+        "skill_id": "magical_shield",
+        "skill_name": "Magical Shield"
+      },
+      {
+        "skill_id": "shield_uppercut",
+        "skill_name": "Shield Uppercut"
+      },
+      {
+        "skill_id": "dual_shields",
+        "skill_name": "Dual Shields"
+      },
+      {
+        "skill_id": "shield_repair",
+        "skill_name": "Shield Repair"
+      },
+      {
+        "skill_id": "belagerung",
+        "skill_name": "Belagerung"
+      },
+      {
+        "skill_id": "protection",
+        "skill_name": "Protection"
+      },
+      {
+        "skill_id": "aegis",
+        "skill_name": "Aegis"
+      },
+      {
+        "skill_id": "guardian",
+        "skill_name": "Guardian"
+      }
+    ]
+  },
+  {
+    "tree_id": "dagger",
+    "tree_label": "Dagger Skills",
+    "skills": [
+      {
+        "skill_id": "throwing_knife",
+        "skill_name": "Throwing Knife"
+      },
+      {
+        "skill_id": "spike_dart",
+        "skill_name": "Spike Dart"
+      },
+      {
+        "skill_id": "gatling_knife",
+        "skill_name": "Gatling Knife"
+      },
+      {
+        "skill_id": "amazing_throw",
+        "skill_name": "Amazing Throw"
+      },
+      {
+        "skill_id": "mad_dagger",
+        "skill_name": "Mad Dagger"
+      },
+      {
+        "skill_id": "poison_dagger",
+        "skill_name": "Poison Dagger"
+      },
+      {
+        "skill_id": "double_stab",
+        "skill_name": "Double Stab"
+      },
+      {
+        "skill_id": "hidden_arm",
+        "skill_name": "Hidden Arm"
+      },
+      {
+        "skill_id": "intensive_knife",
+        "skill_name": "Intensive Knife"
+      },
+      {
+        "skill_id": "mail_breaker",
+        "skill_name": "Mail Breaker"
+      },
+      {
+        "skill_id": "knife_combat",
+        "skill_name": "Knife Combat"
+      },
+      {
+        "skill_id": "flincher_knife",
+        "skill_name": "Flincher Knife"
+      },
+      {
+        "skill_id": "rolling_bite",
+        "skill_name": "Rolling Bite"
+      }
+    ]
+  },
+  {
+    "tree_id": "knight",
+    "tree_label": "Knight Skills",
+    "skills": [
+      {
+        "skill_id": "assault_attack",
+        "skill_name": "Assault Attack"
+      },
+      {
+        "skill_id": "parry",
+        "skill_name": "Parry"
+      },
+      {
+        "skill_id": "perfect_defense",
+        "skill_name": "P. Defense"
+      },
+      {
+        "skill_id": "fareth",
+        "skill_name": "Fareth"
+      },
+      {
+        "skill_id": "aftershield",
+        "skill_name": "Aftershield"
+      },
+      {
+        "skill_id": "provoke",
+        "skill_name": "Provoke"
+      },
+      {
+        "skill_id": "rage_sword",
+        "skill_name": "Rage Sword"
+      },
+      {
+        "skill_id": "binding_strike",
+        "skill_name": "Binding Strike"
+      },
+      {
+        "skill_id": "knight_will",
+        "skill_name": "Knight Will"
+      },
+      {
+        "skill_id": "blink_sword",
+        "skill_name": "Blink Sword"
+      },
+      {
+        "skill_id": "sonic_thrust",
+        "skill_name": "Sonic Thrust"
+      },
+      {
+        "skill_id": "revenir",
+        "skill_name": "Revenir"
+      },
+      {
+        "skill_id": "knight_stance",
+        "skill_name": "Knight's Stance"
+      },
+      {
+        "skill_id": "knight_remedy",
+        "skill_name": "Knight's Remedy"
+      },
+      {
+        "skill_id": "knight_pledge",
+        "skill_name": "Knight Pledge"
+      }
+    ]
+  },
+  {
+    "tree_id": "hunter",
+    "tree_label": "Hunter Skills",
+    "skills": [
+      {
+        "skill_id": "kick",
+        "skill_name": "Kick"
+      },
+      {
+        "skill_id": "sunrise_arrow",
+        "skill_name": "Sunrise Arrow"
+      },
+      {
+        "skill_id": "marrow",
+        "skill_name": "Magic Arrow"
+      },
+      {
+        "skill_id": "satellite_arrow",
+        "skill_name": "Satellite Arrow"
+      },
+      {
+        "skill_id": "focus",
+        "skill_name": "Focus"
+      },
+      {
+        "skill_id": "sleep_trap",
+        "skill_name": "Sleep Trap"
+      },
+      {
+        "skill_id": "bear_trap",
+        "skill_name": "Bear Trap"
+      },
+      {
+        "skill_id": "land_mine",
+        "skill_name": "Land Mine"
+      },
+      {
+        "skill_id": "dark_trap",
+        "skill_name": "Dark Trap"
+      },
+      {
+        "skill_id": "camouflage",
+        "skill_name": "Camouflage"
+      },
+      {
+        "skill_id": "homing_shot",
+        "skill_name": "Homing Shot"
+      },
+      {
+        "skill_id": "detection",
+        "skill_name": "Detection"
+      },
+      {
+        "skill_id": "cyclon_arrow",
+        "skill_name": "Cyclone Arrow"
+      },
+      {
+        "skill_id": "vertical_air",
+        "skill_name": "Vertical Air"
+      },
+      {
+        "skill_id": "hunter_bowgun",
+        "skill_name": "Hunter Bowgun"
+      },
+      {
+        "skill_id": "multiple_hunt",
+        "skill_name": "Multiple Hunt"
+      },
+      {
+        "skill_id": "hunter_knowledge",
+        "skill_name": "Hunter Knowledge"
+      }
+    ]
+  },
+  {
+    "tree_id": "priest",
+    "tree_label": "Priest Skills",
+    "skills": [
+      {
+        "skill_id": "bless",
+        "skill_name": "Bless"
+      },
+      {
+        "skill_id": "gloria",
+        "skill_name": "Gloria"
+      },
+      {
+        "skill_id": "enhanced_bless",
+        "skill_name": "Enhanced Bless"
+      },
+      {
+        "skill_id": "royal_heal",
+        "skill_name": "Royal Heal"
+      },
+      {
+        "skill_id": "sacred_teaching",
+        "skill_name": "Sacred Teaching"
+      },
+      {
+        "skill_id": "holy_fist",
+        "skill_name": "Holy Fist"
+      },
+      {
+        "skill_id": "holy_light",
+        "skill_name": "Holy Light"
+      },
+      {
+        "skill_id": "ether_barrier",
+        "skill_name": "Ether Barrier"
+      },
+      {
+        "skill_id": "prayer",
+        "skill_name": "Prayer"
+      },
+      {
+        "skill_id": "aspis_soul",
+        "skill_name": "Aspis Soul"
+      },
+      {
+        "skill_id": "staff_thrust",
+        "skill_name": "Staff Thrust"
+      },
+      {
+        "skill_id": "exorcism",
+        "skill_name": "Exorcism"
+      },
+      {
+        "skill_id": "holy_book",
+        "skill_name": "Holy Book"
+      },
+      {
+        "skill_id": "nemesis",
+        "skill_name": "Nemesis"
+      },
+      {
+        "skill_id": "holy_grace",
+        "skill_name": "Holy Grace"
+      }
+    ]
+  },
+  {
+    "tree_id": "assassin",
+    "tree_label": "Assassin Skills",
+    "skills": [
+      {
+        "skill_id": "assassin_stab",
+        "skill_name": "Assassin Stab"
+      },
+      {
+        "skill_id": "backstep",
+        "skill_name": "Backstep"
+      },
+      {
+        "skill_id": "arcane_strike",
+        "skill_name": "Arcane Strike"
+      },
+      {
+        "skill_id": "sicarius",
+        "skill_name": "Sicarius"
+      },
+      {
+        "skill_id": "secret_assassin",
+        "skill_name": "Secret Assassin"
+      },
+      {
+        "skill_id": "evasion",
+        "skill_name": "Evasion"
+      },
+      {
+        "skill_id": "serum",
+        "skill_name": "Serum"
+      },
+      {
+        "skill_id": "foresight",
+        "skill_name": "Foresight"
+      },
+      {
+        "skill_id": "shadow_walk",
+        "skill_name": "Shadow Walk"
+      },
+      {
+        "skill_id": "assault_chase",
+        "skill_name": "Assault Chase"
+      },
+      {
+        "skill_id": "venom_injection",
+        "skill_name": "Venom Injection"
+      },
+      {
+        "skill_id": "corrosive_poison",
+        "skill_name": "Corrosive Poison"
+      },
+      {
+        "skill_id": "venom_thief",
+        "skill_name": "Venom Thief"
+      },
+      {
+        "skill_id": "death_reception",
+        "skill_name": "Death Reception"
+      },
+      {
+        "skill_id": "poison_master",
+        "skill_name": "Poison Master"
+      }
+    ]
+  },
+  {
+    "tree_id": "Wizard",
+    "tree_label": "Wizard Skills",
+    "skills": [
+      {
+        "skill_id": "familia",
+        "skill_name": "Familia"
+      },
+      {
+        "skill_id": "lightning",
+        "skill_name": "Lightning"
+      },
+      {
+        "skill_id": "blizzard",
+        "skill_name": "Blizzard"
+      },
+      {
+        "skill_id": "meteor_strike",
+        "skill_name": "Meteor Strike"
+      },
+      {
+        "skill_id": "imperial_ray",
+        "skill_name": "Imperial Ray"
+      },
+      {
+        "skill_id": "magic_research",
+        "skill_name": "Magic Research"
+      },
+      {
+        "skill_id": "mana_crystal",
+        "skill_name": "Mana Crystal"
+      },
+      {
+        "skill_id": "stone_barrier",
+        "skill_name": "Stone Barrier"
+      },
+      {
+        "skill_id": "advanced_familia",
+        "skill_name": "Advanced Familia"
+      },
+      {
+        "skill_id": "kitty_treasure",
+        "skill_name": "Kitty's Treasure"
+      },
+      {
+        "skill_id": "crystal_laser",
+        "skill_name": "Crystal Laser"
+      },
+      {
+        "skill_id": "overlimit",
+        "skill_name": "Overlimit"
+      },
+      {
+        "skill_id": "sorcery_guide",
+        "skill_name": "Sorcery Guide"
+      },
+      {
+        "skill_id": "shift",
+        "skill_name": "Shift"
+      },
+      {
+        "skill_id": "cast_mastery",
+        "skill_name": "Cast Mastery"
+      }
+    ]
+  },
+  {
+    "tree_id": "golem",
+    "tree_label": "Golem Skills",
+    "skills": [
+      {
+        "skill_id": "golem_call",
+        "skill_name": "Golem Call"
+      },
+      {
+        "skill_id": "neo_lancer",
+        "skill_name": "Neo Lancer"
+      },
+      {
+        "skill_id": "attack_boost",
+        "skill_name": "Attack Boost"
+      },
+      {
+        "skill_id": "neo_shielder",
+        "skill_name": "Neo Shielder"
+      },
+      {
+        "skill_id": "shield_boost",
+        "skill_name": "Shield Boost"
+      },
+      {
+        "skill_id": "neo_buster",
+        "skill_name": "Neo Buster"
+      },
+      {
+        "skill_id": "speed_boost",
+        "skill_name": "Speed Boost"
+      },
+      {
+        "skill_id": "magic_grenade",
+        "skill_name": "Magic Grenade"
+      },
+      {
+        "skill_id": "frost_grenade",
+        "skill_name": "Frost Grenade"
+      },
+      {
+        "skill_id": "flash_grenade",
+        "skill_name": "Flash Grenade"
+      },
+      {
+        "skill_id": "barrier_screen",
+        "skill_name": "Barrier Screen"
+      },
+      {
+        "skill_id": "barrier_upgrade",
+        "skill_name": "Barrier Upgrade"
+      }
+    ]
+  },
+  {
+    "tree_id": "guard",
+    "tree_label": "Guard Skills",
+    "skills": [
+      {
+        "skill_id": "heavy_armor_mastery",
+        "skill_name": "Heavy Armor Mastery"
+      },
+      {
+        "skill_id": "physical_guard",
+        "skill_name": "Physical Guard"
+      },
+      {
+        "skill_id": "advanced_guard",
+        "skill_name": "Advanced Guard"
+      },
+      {
+        "skill_id": "light_armor_mastery",
+        "skill_name": "Light Armor Mastery"
+      },
+      {
+        "skill_id": "advanced_evasion",
+        "skill_name": "Advanced Evasion"
+      },
+      {
+        "skill_id": "mirage_evasion",
+        "skill_name": "Mirage Evasion"
+      }
+    ]
+  },
+  {
+    "tree_id": "dark_power",
+    "tree_label": "Dark Power Skills",
+    "skills": [
+      {
+        "skill_id": "bloody_bite",
+        "skill_name": "Bloody Bite"
+      },
+      {
+        "skill_id": "dark_stinger",
+        "skill_name": "Dark Stinger"
+      },
+      {
+        "skill_id": "red_tear",
+        "skill_name": "Red Tear"
+      },
+      {
+        "skill_id": "soul_hunter",
+        "skill_name": "Soul Hunter"
+      },
+      {
+        "skill_id": "sacrifice",
+        "skill_name": "Sacrifice"
+      },
+      {
+        "skill_id": "demon_claw",
+        "skill_name": "Demon Claw"
+      },
+      {
+        "skill_id": "regretless",
+        "skill_name": "Regretless"
+      },
+      {
+        "skill_id": "eternal_nightmare",
+        "skill_name": "Eternal Nightmare"
+      },
+      {
+        "skill_id": "intimidating_evil_eye",
+        "skill_name": "Intimidating Evil Eye"
+      },
+      {
+        "skill_id": "bewitching_evil_eye",
+        "skill_name": "Bewitching Evil Eye"
+      },
+      {
+        "skill_id": "black_flame_evil_eye",
+        "skill_name": "Black Flame Evil Eye"
+      },
+      {
+        "skill_id": "chaotic_evil_eye",
+        "skill_name": "Chaotic Evil Eye"
+      }
+    ]
+  },
+  {
+    "tree_id": "magic_warrior",
+    "tree_label": "Magic Warrior Skills",
+    "skills": [
+      {
+        "skill_id": "magic_warrior_mastery",
+        "skill_name": "Magic Warrior Mastery"
+      },
+      {
+        "skill_id": "conversion",
+        "skill_name": "Conversion"
+      },
+      {
+        "skill_id": "resonance",
+        "skill_name": "Resonance"
+      },
+      {
+        "skill_id": "enchanted_spell",
+        "skill_name": "Enchanted Spell"
+      },
+      {
+        "skill_id": "dual_bringer",
+        "skill_name": "Dual Bringer"
+      },
+      {
+        "skill_id": "ether_flare",
+        "skill_name": "Ether Flare"
+      },
+      {
+        "skill_id": "element_slash",
+        "skill_name": "Element Slash"
+      },
+      {
+        "skill_id": "enchant_sword",
+        "skill_name": "Enchant Sword"
+      },
+      {
+        "skill_id": "enchanted_burst",
+        "skill_name": "Enchanted Burst"
+      },
+      {
+        "skill_id": "union_sword",
+        "skill_name": "Union Sword"
+      },
+      {
+        "skill_id": "siphon_barrier",
+        "skill_name": "Siphon Barrier"
+      },
+      {
+        "skill_id": "teleport",
+        "skill_name": "Teleport"
+      },
+      {
+        "skill_id": "siphon_recall",
+        "skill_name": "Siphon Recall"
+      },
+      {
+        "skill_id": "float_dash",
+        "skill_name": "Float Dash"
+      },
+      {
+        "skill_id": "magic_skin",
+        "skill_name": "Magic Skin"
+      }
+    ]
+  },
+  {
+    "tree_id": "ninja",
+    "tree_label": "Ninja Skills",
+    "skills": [
+      {
+        "skill_id": "ninjutsu",
+        "skill_name": "Ninjutsu"
+      },
+      {
+        "skill_id": "ninja_spirit",
+        "skill_name": "Ninja Spirit"
+      },
+      {
+        "skill_id": "ninjutsu_drill",
+        "skill_name": "Ninjutsu Drill I"
+      },
+      {
+        "skill_id": "ninjutsu_drill_ii",
+        "skill_name": "Ninjutsu Drill II"
+      }
+    ]
+  },
+  {
+    "tree_id": "partisan",
+    "tree_label": "Partisan Skills",
+    "skills": [
+      {
+        "skill_id": "l_boomerang_i",
+        "skill_name": "L Boomerang"
+      },
+      {
+        "skill_id": "l_boomerang_ii",
+        "skill_name": "L Boomerang II"
+      },
+      {
+        "skill_id": "l_boomerang_iii",
+        "skill_name": "L Boomerang III"
+      },
+      {
+        "skill_id": "n_dragon_tooth",
+        "skill_name": "N Dragon Tooth"
+      },
+      {
+        "skill_id": "healing_shot",
+        "skill_name": "Healing Shot"
+      },
+      {
+        "skill_id": "arrow_sharpening",
+        "skill_name": "Arrow Sharpening"
+      },
+      {
+        "skill_id": "survival_instinct",
+        "skill_name": "Survival Instinct"
+      },
+      {
+        "skill_id": "frontliner",
+        "skill_name": "Frontliner"
+      },
+      {
+        "skill_id": "frontliner_ii",
+        "skill_name": "Frontliner II"
+      }
+    ]
+  },
+  {
+    "tree_id": "minstrel",
+    "tree_label": "Minstrel Skills",
+    "skills": [
+      {
+        "skill_id": "healing_song",
+        "skill_name": "Healing Song"
+      },
+      {
+        "skill_id": "fairy_song",
+        "skill_name": "Fairy Song"
+      },
+      {
+        "skill_id": "passion_song",
+        "skill_name": "Passion Song"
+      },
+      {
+        "skill_id": "wisdom_song",
+        "skill_name": "Wisdon Song"
+      },
+      {
+        "skill_id": "life_song",
+        "skill_name": "Life Song"
+      },
+      {
+        "skill_id": "fantasy_song",
+        "skill_name": "Fantasy Song"
+      },
+      {
+        "skill_id": "ad_lib",
+        "skill_name": "Ad-Lib"
+      }
+    ]
+  },
+  {
+    "tree_id": "dancer",
+    "tree_label": "Dancer Skills",
+    "skills": [
+      {
+        "skill_id": "fairy_dance",
+        "skill_name": "Fairy Dance"
+      },
+      {
+        "skill_id": "frenzy_dance",
+        "skill_name": "Frenzy Dance"
+      },
+      {
+        "skill_id": "astute_dance",
+        "skill_name": "Astute Dance"
+      },
+      {
+        "skill_id": "charming_dance",
+        "skill_name": "Charming Dance"
+      },
+      {
+        "skill_id": "spirited_dance",
+        "skill_name": "Spirited Dance"
+      },
+      {
+        "skill_id": "elegant_poise",
+        "skill_name": "Elegant Poise"
+      },
+      {
+        "skill_id": "nature_wonder",
+        "skill_name": "Nature's Wonder"
+      }
+    ]
+  },
+  {
+    "tree_id": "necromancer",
+    "tree_label": "Necromancer Skills",
+    "skills": [
+      {
+        "skill_id": "grave_digger",
+        "skill_name": "Grave Digger"
+      },
+      {
+        "skill_id": "phantom_missle",
+        "skill_name": "Phantom Missle"
+      },
+      {
+        "skill_id": "blood_siphon",
+        "skill_name": "Blood Siphon"
+      },
+      {
+        "skill_id": "soul_stream",
+        "skill_name": "Soul Stream"
+      },
+      {
+        "skill_id": "skeleton_call",
+        "skill_name": "Skeleton Call"
+      },
+      {
+        "skill_id": "demonic_pact",
+        "skill_name": "Demonic Pact"
+      },
+      {
+        "skill_id": "fine_shovel",
+        "skill_name": "Fine Shovel"
+      },
+      {
+        "skill_id": "harvest",
+        "skill_name": "Harvest"
+      },
+      {
+        "skill_id": "opportunist",
+        "skill_name": "Opportunist"
+      },
+      {
+        "skill_id": "tomb",
+        "skill_name": "Tomb"
+      },
+      {
+        "skill_id": "skull_shaker",
+        "skill_name": "Skull Shaker"
+      },
+      {
+        "skill_id": "hazard_strike",
+        "skill_name": "Hazard Strike"
+      }
+    ]
+  },
+  {
+    "tree_id": "support",
+    "tree_label": "Support Skills",
+    "skills": [
+      {
+        "skill_id": "first_aid",
+        "skill_name": "First Aid"
+      },
+      {
+        "skill_id": "mini_heal",
+        "skill_name": "Mini Heal"
+      },
+      {
+        "skill_id": "recovery",
+        "skill_name": "Recovery"
+      },
+      {
+        "skill_id": "sanctuary",
+        "skill_name": "Sanctuary"
+      },
+      {
+        "skill_id": "heal",
+        "skill_name": "Heal"
+      },
+      {
+        "skill_id": "life_recovery",
+        "skill_name": "Life Recovery"
+      },
+      {
+        "skill_id": "brave_aura",
+        "skill_name": "Brave Aura"
+      },
+      {
+        "skill_id": "high_cycle",
+        "skill_name": "High Cycle"
+      },
+      {
+        "skill_id": "quick_motion",
+        "skill_name": "Quick Motion"
+      },
+      {
+        "skill_id": "mana_recharge",
+        "skill_name": "Mana Recharge"
+      },
+      {
+        "skill_id": "magic_barrier",
+        "skill_name": "Magic Barrier"
+      },
+      {
+        "skill_id": "immunity",
+        "skill_name": "Immunity"
+      },
+      {
+        "skill_id": "fast_reaction",
+        "skill_name": "Fast Reaction"
+      }
+    ]
+  },
+  {
+    "tree_id": "survival",
+    "tree_label": "Survival Skills",
+    "skills": [
+      {
+        "skill_id": "play_dead",
+        "skill_name": "Play Dead"
+      },
+      {
+        "skill_id": "exp_up",
+        "skill_name": "EXP Gain UP"
+      },
+      {
+        "skill_id": "drop_up",
+        "skill_name": "Drop Rate UP"
+      },
+      {
+        "skill_id": "safe_rest",
+        "skill_name": "Safe Rest"
+      },
+      {
+        "skill_id": "hp_boost",
+        "skill_name": "HP Boost"
+      },
+      {
+        "skill_id": "fighter_high",
+        "skill_name": "Fighter's High"
+      },
+      {
+        "skill_id": "short_rest",
+        "skill_name": "Short Rest"
+      },
+      {
+        "skill_id": "mp_boost",
+        "skill_name": "MP Boost"
+      },
+      {
+        "skill_id": "sober_analysis",
+        "skill_name": "Sober Analysis"
+      }
+    ]
+  },
+  {
+    "tree_id": "battle",
+    "tree_label": "Battle Skills",
+    "skills": [
+      {
+        "skill_id": "magic_up",
+        "skill_name": "Magic UP"
+      },
+      {
+        "skill_id": "concentrate",
+        "skill_name": "Concentrate"
+      },
+      {
+        "skill_id": "desperate_resist",
+        "skill_name": "Desperate Resist"
+      },
+      {
+        "skill_id": "increased_energy",
+        "skill_name": "Increased Energy"
+      },
+      {
+        "skill_id": "spell_burst",
+        "skill_name": "Spell Burst"
+      },
+      {
+        "skill_id": "attack_up",
+        "skill_name": "Attack UP"
+      },
+      {
+        "skill_id": "whack",
+        "skill_name": "Whack"
+      },
+      {
+        "skill_id": "critical_up",
+        "skill_name": "Critical UP"
+      },
+      {
+        "skill_id": "intimidating_power",
+        "skill_name": "Intimidating Power"
+      },
+      {
+        "skill_id": "secret_chase_attack",
+        "skill_name": "Secret Chase Attack"
+      },
+      {
+        "skill_id": "defense_up",
+        "skill_name": "Defense UP"
+      },
+      {
+        "skill_id": "dodge_up",
+        "skill_name": "Dodge UP"
+      },
+      {
+        "skill_id": "accuracy_up",
+        "skill_name": "Accuracy UP"
+      },
+      {
+        "skill_id": "defense_mastery",
+        "skill_name": "Defense Mastery"
+      },
+      {
+        "skill_id": "super_grip",
+        "skill_name": "Super Grip"
+      }
+    ]
+  },
+  {
+    "tree_id": "smith",
+    "tree_label": "Smith Skills",
+    "skills": [
+      {
+        "skill_id": "refine_equipment",
+        "skill_name": "Refine Equipment"
+      },
+      {
+        "skill_id": "notice_anvil",
+        "skill_name": "Notice's Anvil"
+      },
+      {
+        "skill_id": "craftsman_anvil",
+        "skill_name": "Craftsman's Anvil"
+      },
+      {
+        "skill_id": "blacksmith_anvil",
+        "skill_name": "Blacksmith's Anvil"
+      },
+      {
+        "skill_id": "master_anvil",
+        "skill_name": "Master's Anvil"
+      },
+      {
+        "skill_id": "master_anvil_ii",
+        "skill_name": "Master's Anvil II"
+      },
+      {
+        "skill_id": "mid_class_refinement",
+        "skill_name": "Mid-Class Refinement"
+      },
+      {
+        "skill_id": "high_class_refinement",
+        "skill_name": "High-Class Refinement"
+      },
+      {
+        "skill_id": "expert_refinement",
+        "skill_name": "Expert Refinement"
+      },
+      {
+        "skill_id": "create_equipment",
+        "skill_name": "Create Equipment"
+      },
+      {
+        "skill_id": "careful_creation",
+        "skill_name": "Careful Creation"
+      },
+      {
+        "skill_id": "expert_creation",
+        "skill_name": "Expert's Creation"
+      },
+      {
+        "skill_id": "customize_equipment",
+        "skill_name": "Customize Equipment"
+      },
+      {
+        "skill_id": "accurate_customization",
+        "skill_name": "Accurate Customization"
+      },
+      {
+        "skill_id": "expert_customization",
+        "skill_name": "Expert's Customization"
+      },
+      {
+        "skill_id": "expert_customization_ii",
+        "skill_name": "Expert's Customization II"
+      },
+      {
+        "skill_id": "metal_compassion",
+        "skill_name": "Metal Compassion"
+      },
+      {
+        "skill_id": "fabric_compassion",
+        "skill_name": "Fabric Compassion"
+      },
+      {
+        "skill_id": "beast_compassion",
+        "skill_name": "Beast Compassion"
+      },
+      {
+        "skill_id": "wood_compassion",
+        "skill_name": "Wood Compassion"
+      },
+      {
+        "skill_id": "medicine_compassion",
+        "skill_name": "Medicine Compassion"
+      },
+      {
+        "skill_id": "mana_compassion",
+        "skill_name": "Mana Compassion"
+      },
+      {
+        "skill_id": "process_material",
+        "skill_name": "Process Material"
+      }
+    ]
+  },
+  {
+    "tree_id": "alchemy",
+    "tree_label": "Alchemy Skills",
+    "skills": [
+      {
+        "skill_id": "process_material",
+        "skill_name": "Process Material"
+      },
+      {
+        "skill_id": "item_synthesis",
+        "skill_name": "Item Synthesis"
+      },
+      {
+        "skill_id": "notice_bottle",
+        "skill_name": "Notice's Bottle"
+      },
+      {
+        "skill_id": "craftsman_bottle",
+        "skill_name": "Craftsman's Bottle"
+      },
+      {
+        "skill_id": "synthesist_bottle",
+        "skill_name": "Synthesist's Bottle"
+      },
+      {
+        "skill_id": "master_bottle",
+        "skill_name": "Master's Bottle"
+      },
+      {
+        "skill_id": "master_bottle_ii",
+        "skill_name": "Master's Bottle II"
+      },
+      {
+        "skill_id": "mid_class_synthesis",
+        "skill_name": "Mid-Class Synthesis"
+      },
+      {
+        "skill_id": "high_class_synthesis",
+        "skill_name": "High-Class Synthesis"
+      },
+      {
+        "skill_id": "expert_synthesis",
+        "skill_name": "Expert's Synthesis"
+      },
+      {
+        "skill_id": "expert_synthesis_ii",
+        "skill_name": "Expert's Synthesis II"
+      },
+      {
+        "skill_id": "synthesize_equipment",
+        "skill_name": "Synthesize Equipment"
+      },
+      {
+        "skill_id": "technical_synthesis",
+        "skill_name": "Technical Synthesis I"
+      },
+      {
+        "skill_id": "technical_synthesis_ii",
+        "skill_name": "Technical Synthesis II"
+      },
+      {
+        "skill_id": "technical_synthesis_iii",
+        "skill_name": "Technical Synthesis III"
+      }
+    ]
+  },
+  {
+    "tree_id": "tamer",
+    "tree_label": "Tamer Skills",
+    "skills": [
+      {
+        "skill_id": "taming",
+        "skill_name": "Taming"
+      },
+      {
+        "skill_id": "capture_technique",
+        "skill_name": "Capture Technique I"
+      },
+      {
+        "skill_id": "capture_technique_ii",
+        "skill_name": "Capture Technique II"
+      },
+      {
+        "skill_id": "skillful_capture",
+        "skill_name": "Skillful Capture"
+      },
+      {
+        "skill_id": "careful_capture",
+        "skill_name": "Careful Capture"
+      },
+      {
+        "skill_id": "pet_heal",
+        "skill_name": "Pet Heal"
+      },
+      {
+        "skill_id": "pet_mp_charge",
+        "skill_name": "Pet MP Charge"
+      }
+    ]
+  }
+]

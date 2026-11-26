@@ -308,61 +308,221 @@ addBuildComboButton?.addEventListener(
   // SKILL TREE DAN SKILL
   // ========================================
 
-  function addSkillRow(skillsContainer) {
-    const card = createElement("div", "build-dynamic-card");
-    const grid = createElement("div", "build-form-grid");
+  // Data skill tree dimuat dari backend/public/skill-trees.json.
+  let skillTreeData = [];
+  let skillTreeLoadError = null;
 
-    const skillName = createField("Nama Skill", "skill-name", {
-      placeholder: "Contoh: Rampage",
-      required: true
-    });
-
-    const skillLevel = createField("Level Skill", "skill-level", {
-      type: "number",
-      min: 1,
-      max: 10,
-      required: true
-    });
-    skillLevel.input.value = "10";
-
-    const description = createField(
-      "Deskripsi Skill (opsional)",
-      "skill-description",
-      {
-        textarea: true,
-        full: true,
-        placeholder: "Contoh: Skill DPS utama."
+  const skillTreeDataPromise = fetch("/skill-trees.json", {
+    cache: "force-cache"
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Data Skill Tree gagal dimuat.");
       }
+      return response.json();
+    })
+    .then((data) => {
+      if (!Array.isArray(data)) {
+        throw new Error("Format data Skill Tree tidak valid.");
+      }
+      skillTreeData = data;
+      return skillTreeData;
+    })
+    .catch((error) => {
+      skillTreeLoadError = error;
+      console.error("Gagal memuat data Skill Tree:", error);
+      return [];
+    });
+
+  function updateSkillOptions(treeSelect, skillInput, dataList) {
+    const selectedTree = skillTreeData.find(
+      (tree) => tree.tree_label === treeSelect.value
     );
 
-    grid.append(
-      skillName.wrapper,
-      skillLevel.wrapper,
-      description.wrapper
+    dataList.replaceChildren();
+
+    if (!selectedTree) {
+      skillInput.value = "";
+      skillInput.disabled = true;
+      skillInput.placeholder = "Pilih Skill Tree terlebih dahulu";
+      return;
+    }
+
+    const availableNames = new Set(
+      selectedTree.skills.map((skill) => skill.skill_name)
     );
 
-    const actions = createElement("div", "build-dynamic-actions");
+    if (skillInput.value && !availableNames.has(skillInput.value)) {
+      skillInput.value = "";
+    }
 
-    actions.append(
-      createActionButton("Hapus Skill", "build-remove-button", () => {
-        card.remove();
-      })
-    );
+    selectedTree.skills.forEach((skill) => {
+      const option = document.createElement("option");
+      option.value = skill.skill_name;
+      dataList.append(option);
+    });
 
-    card.append(grid, actions);
-    skillsContainer.append(card);
+    skillInput.disabled = false;
+    skillInput.placeholder = "Ketik untuk mencari skill";
   }
 
-  function addSkillTree() {
+  
+function addSkillRow(skillsContainer, treeSelect) {
+  const card = createElement(
+    "details",
+    "build-dynamic-card build-skill-accordion"
+  );
+
+  const summary = createElement(
+    "summary",
+    "build-accordion-summary",
+    "Skill"
+  );
+
+  summary.style.cursor = "pointer";
+  summary.style.fontWeight = "600";
+  summary.style.padding = "4px 0";
+
+  const content = createElement("div", "build-accordion-content");
+  content.style.paddingTop = "14px";
+
+  const grid = createElement("div", "build-form-grid");
+
+  const skillName = createField("Nama Skill", "skill-name", {
+    placeholder: "Pilih Skill Tree terlebih dahulu",
+    required: true
+  });
+
+  const dataList = document.createElement("datalist");
+  dataList.id = `skill-options-${crypto.randomUUID()}`;
+
+  skillName.input.setAttribute("list", dataList.id);
+  skillName.input.autocomplete = "off";
+  skillName.input.disabled = !treeSelect.value;
+
+  const skillLevel = createField("Level Skill", "skill-level", {
+    type: "number",
+    min: 1,
+    max: 10,
+    required: true
+  });
+
+  skillLevel.input.value = "10";
+
+  const description = createField(
+    "Deskripsi Skill (opsional)",
+    "skill-description",
+    {
+      textarea: true,
+      full: true,
+      placeholder: "Contoh: Skill DPS utama."
+    }
+  );
+
+  grid.append(
+    skillName.wrapper,
+    skillLevel.wrapper,
+    description.wrapper
+  );
+
+  const actions = createElement("div", "build-dynamic-actions");
+
+  actions.append(
+    createActionButton("Hapus Skill", "build-remove-button", () => {
+      card.remove();
+      refreshSkillSummaries(skillsContainer);
+    })
+  );
+
+  function updateSummary() {
+    const skillNumber =
+      Array.from(skillsContainer.children).indexOf(card) + 1;
+
+    const skillLabel =
+      skillName.input.value.trim() || "Belum dipilih";
+
+    summary.textContent =
+      `Skill ${skillNumber} · ${skillLabel} · Lv. ${skillLevel.input.value || "—"}`;
+  }
+
+  skillName.input.addEventListener("input", updateSummary);
+  skillLevel.input.addEventListener("input", updateSummary);
+
+  content.append(grid, dataList, actions);
+  card.append(summary, content);
+  skillsContainer.append(card);
+
+  updateSkillOptions(treeSelect, skillName.input, dataList);
+
+  treeSelect.addEventListener("change", () => {
+    updateSkillOptions(treeSelect, skillName.input, dataList);
+  });
+
+  updateSummary();
+}
+
+
+function refreshSkillSummaries(skillsContainer) {
+  Array.from(skillsContainer.children).forEach((card, index) => {
+    const summary = card.querySelector("summary");
+
+    const name =
+      card.querySelector('[name="skill-name"]')?.value.trim() ||
+      "Belum dipilih";
+
+    const level =
+      card.querySelector('[name="skill-level"]')?.value || "—";
+
+    if (summary) {
+      summary.textContent =
+        `Skill ${index + 1} · ${name} · Lv. ${level}`;
+    }
+  });
+}
+
+
+function refreshTreeSummaries() {
+  if (!skillTreesContainer) return;
+
+  Array.from(skillTreesContainer.children).forEach((card, index) => {
+    const summary = card.querySelector(":scope > summary");
+
+    const name =
+      card.querySelector('[name="tree-name"]')?.value.trim() ||
+      "Pilih Skill Tree";
+
+    if (summary) {
+      summary.textContent = `Skill Tree ${index + 1} · ${name}`;
+    }
+  });
+}
+
+
+
+  async function addSkillTree() {
     if (!skillTreesContainer) return;
+
+    await skillTreeDataPromise;
+
+    if (skillTreeLoadError || skillTreeData.length === 0) {
+      showMessage(
+        "Data Skill Tree tidak dapat dimuat. Pastikan skill-trees.json tersedia di folder public."
+      );
+      return;
+    }
 
     const card = createElement("div", "build-dynamic-card");
     const heading = createElement("h3", "", "Skill Tree");
-
     const grid = createElement("div", "build-form-grid");
 
     const treeName = createField("Nama Skill Tree", "tree-name", {
-      placeholder: "Contoh: Skill Pedang",
+      selectOptions: [
+        { value: "", label: "Pilih Skill Tree" },
+        ...skillTreeData.map((tree) => ({
+          value: tree.tree_label,
+          label: tree.tree_label
+        }))
+      ],
       required: true
     });
 
@@ -375,7 +535,7 @@ addBuildComboButton?.addEventListener(
     const addSkillButton = createActionButton(
       "+ Tambah Skill",
       "build-secondary-button",
-      () => addSkillRow(skillsContainer)
+      () => addSkillRow(skillsContainer, treeName.input)
     );
 
     const actions = createElement("div", "build-dynamic-actions");
@@ -396,12 +556,12 @@ addBuildComboButton?.addEventListener(
     );
 
     skillTreesContainer.append(card);
-
-    addSkillRow(skillsContainer);
+    addSkillRow(skillsContainer, treeName.input);
   }
 
   addSkillTreeButton?.addEventListener("click", addSkillTree);
 
+  // ========================================
   // ========================================
   // REGISTLET DAN STARGEM
   // ========================================
@@ -699,10 +859,11 @@ addBuildComboButton?.addEventListener(
         skillTreesContainer.children
       );
 
-      treeCards.forEach((treeCard, treeIndex) => {
+      treeCards.forEach((treeCard, treeIndex) => {  
         const treeNameInput = treeCard.querySelector(
-          'input[name="tree-name"]'
-        );
+          '[name="tree-name"]'
+      );
+
 
         const treeName = treeNameInput?.value.trim() || "";
 
@@ -719,6 +880,13 @@ addBuildComboButton?.addEventListener(
         const skillCards = skillsContainer
           ? Array.from(skillsContainer.children)
           : [];
+        const selectedTreeData = skillTreeData.find(
+          (tree) => tree.tree_label === treeName
+        );
+
+        if (!selectedTreeData) {
+          throw new Error(`Skill Tree "${treeName}" tidak valid.`);
+        }
 
         if (skillCards.length === 0) {
           throw new Error(
@@ -743,6 +911,14 @@ addBuildComboButton?.addEventListener(
           if (!name) {
             throw new Error(
               `Nama skill ke-${skillIndex + 1} pada "${treeName}" wajib diisi.`
+            );
+          }
+
+          if (
+            !selectedTreeData.skills.some((skill) => skill.skill_name === name)
+          ) {
+            throw new Error(
+              `Skill "${name}" tidak terdaftar pada Skill Tree "${treeName}". Pilih skill dari daftar.`
             );
           }
 

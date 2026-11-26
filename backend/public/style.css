@@ -3961,3 +3961,144 @@ a:focus-visible {
   display: block;
   flex-shrink: 0;
 }
+
+
+/* ========================================
+   CHARACTER BUILD - SKILL SEARCH & DETAIL
+   ======================================== */
+
+/* Searchable skill selector */
+.build-skill-search {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.build-skill-search input,
+.build-skill-search select {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Nested Skill Tree accordions on build detail */
+.build-skill-tree-accordion {
+  margin: 12px 0;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--pink) 8%, var(--input));
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+
+.build-skill-tree-accordion > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 17px;
+  color: var(--text);
+  font-weight: 650;
+  cursor: pointer;
+  list-style: none;
+}
+
+.build-skill-tree-accordion > summary::-webkit-details-marker {
+  display: none;
+}
+
+.build-skill-tree-accordion > summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  color: var(--pink);
+  font-size: 1.25rem;
+}
+
+.build-skill-tree-accordion[open] > summary::after {
+  content: "−";
+}
+
+.build-skill-tree-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 16px 16px;
+}
+
+.build-skill-entry {
+  min-width: 0;
+  padding: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.build-skill-entry-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 12px;
+  margin-bottom: 6px;
+}
+
+.build-skill-entry-name {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.98rem;
+  overflow-wrap: anywhere;
+}
+
+.build-skill-entry-level {
+  color: var(--pink);
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.build-skill-entry-description {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+/* Combo screenshots: show the complete image at its natural ratio */
+.build-combo-card {
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.build-combo-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+}
+
+@media (min-width: 900px) {
+  .build-combo-image {
+    width: auto;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .build-skill-tree-accordion > summary {
+    padding: 13px 14px;
+  }
+
+  .build-skill-tree-content {
+    padding: 0 12px 12px;
+  }
+
+  .build-skill-entry {
+    padding: 12px;
+  }
+}
